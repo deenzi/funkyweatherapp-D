@@ -21,6 +21,8 @@ p {
   text-align: right;
   position: relative;
   right: 30px;
+  padding: 0px;
+  margin: 0px;
 }
 
 p.hello {
@@ -31,10 +33,24 @@ p.hello {
   margin: 0;
 }
 
+p.wind,
+p.rain,
+p.how {
+  text-align: right;
+  padding: 1px;
+  margin: 0px;
+  font-size: 15px;
+}
+
+p.wind {
+  padding-top: 12px;
+}
+
 p.footer {
   text-align: center;
-  padding: 65px;
+  padding: 60px;
   font-size: 14px;
+  margin: 2px;
 }
 
 img {
