@@ -48,9 +48,13 @@ function showTemp(response) {
   let roundedTemp = Math.round(response.data.main.temp);
   let wind = document.querySelector("#wind-speed");
   let roundedWind = Math.round(response.data.wind.speed);
+  let precip = document.querySelector("#precipitation");
+  let descriptionWord = document.querySelector("#description");
   temp.innerHTML = `${roundedTemp} °C`;
   city.innerHTML = response.data.name;
-  wind.innerHTML = `Windspeed ${roundedWind} Km/s`;
+  wind.innerHTML = `windspeed ${roundedWind} Km/s`;
+  precip.innerHTML = `humidity ${response.data.main.humidity} %`;
+  descriptionWord.innerHTML = response.data.weather[0].description;
 }
 
 // No Bonus for me 🤷
