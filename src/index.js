@@ -44,10 +44,12 @@ function searchCity(city) {
 }
 function showTemp(response) {
   let city = document.querySelector("#main-city");
+  let wind = document.querySelector("#wind");
   let temp = document.querySelector("#number-degrees");
   let roundedTemp = Math.round(response.data.main.temp);
   temp.innerHTML = `${roundedTemp} °C`;
   city.innerHTML = response.data.name;
+  wind.innerHTML = `Windspeed ${Math.round(response.data.wind.speed)}Km/h`;
 }
 
 // No Bonus for me 🤷
