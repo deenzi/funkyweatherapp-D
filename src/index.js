@@ -47,9 +47,10 @@ function showTemp(response) {
   let temp = document.querySelector("#number-degrees");
   let roundedTemp = Math.round(response.data.main.temp);
   let wind = document.querySelector("#wind-speed");
+  let roundedWind = Math.round(response.data.wind.speed);
   temp.innerHTML = `${roundedTemp} °C`;
   city.innerHTML = response.data.name;
-  wind.innerHTML = response.data.wind.speed;
+  wind.innerHTML = `Windspeed ${roundedWind} Km/s`;
 }
 
 // No Bonus for me 🤷
