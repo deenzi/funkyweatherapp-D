@@ -53,13 +53,21 @@ p.footer {
   margin: 2px;
 }
 
-img {
+img.card-img-top {
   height: 200px;
 }
 form {
   position: relative;
   left: 30px;
 }
+
+img.main {
+  position: relative;
+  width: 80px;
+  padding: 0px 5px;
+  margin: 0px 5px;
+}
+
 .col-2 {
   position: relative;
   left: 15px;

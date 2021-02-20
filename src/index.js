@@ -55,6 +55,10 @@ function showTemp(response) {
   wind.innerHTML = `windspeed ${roundedWind} Km/s`;
   precip.innerHTML = `humidity ${response.data.main.humidity} %`;
   descriptionWord.innerHTML = response.data.weather[0].description;
+  
+  let weatherIcon = document.querySelector("#emoji-today");
+  weatherIcon.setAttribute(
+    "src","http://www.openweathermap.org/img/wn/${response.data.weater[0].icon}@2x.png");
 }
 
 // No Bonus for me 🤷
